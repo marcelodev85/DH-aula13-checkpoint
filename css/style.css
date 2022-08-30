@@ -3,12 +3,117 @@
      --color-secondary: gold;
      --text-primary: black;
      --text-secondary: white;
-     --text-paragrafo: red;
      --bg-header: purple;
+
+     /*cores para section de video*/
+     --text-title: #0000CD;
+     --primary-paragrafo: black;
+     --secondary-paragrafo: white;
+     --primary-backgroud: #222222;
+     --secondary-backgroud: white;
+
+}
+
+/* BOA SORTE PESSOAL SE PRECISAR DE ALGUMA AJUDA SO ME FALAR ATT CESAR*/
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 
 .bloco1 p {
     font-family: "Montserrat";
     color: var(--text-paragrafo);
+}
+
+
+
+
+
+
+
+
+
+/*SECTION VIDEO*/
+.event-video{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-backgroud);
+    width: 100%;
+    height: 600px;
+}
+
+.event-video .EmblemaPE {
+    background-image: url("../images/Bandeira_de_Recife.png");
+    width: 400px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 30px 0 0 20px;    
+}
+
+.event-video h2 {
+    font-family: "DynaPuff", sans-serif;
+    text-align: start;
+    text-align: center;
+    color: var(--text-title);
+    width: 90%;
+    margin: 10px 0 10px 20px;
+}
+
+.event-video p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-secondary);
+    width: 90%;
+    margin: 0px 0px 0px 20px;
+}
+
+.event-video .video iframe {
+    width: 880px;
+    height: 500px;
+    margin: 30px 20px 0 0;
+
+}
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 350px;
+    background-color: var(--secondary-backgroud);
+}
+
+footer .perfil {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    height: 100%;
+    margin: 10px 0 0 0;    
+
+}
+
+footer #imgPerfil {
+    background-image: url(../images/CesarDAnovich.png);
+}
+
+footer a{
+    margin-left: 1em;
+}
+
+/*FOOTER - RODAPÉ*/
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-backgroud);
+    color: var(--secondary-paragrafo);
+    
+}
+.rodape p {
+    font-family: "montserrat", sans-serif;
 }
