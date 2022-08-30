@@ -1,3 +1,14 @@
+:root {
+     --color-primary: blue;
+     --color-secondary: gold;
+     --text-primary: black;
+     --text-secondary: white;
+     --text-paragrafo: red;
+     --bg-header: purple;
+}
+
+
 .bloco1 p {
     font-family: "Montserrat";
+    color: var(--text-paragrafo);
 }
