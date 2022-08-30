@@ -91,12 +91,16 @@ footer .perfil {
     background-position: center;
     width: 30%;
     height: 100%;
-    margin: 10px 0 0 0;    
+    margin: 5px 0px 0px 0px;    
 
 }
 
-footer #imgPerfil {
+footer #imgPerfilCesar {
     background-image: url(../images/CesarDAnovich.png);
+}
+
+footer #imgPerfilThalita {
+    background-image: url(../images/ThalitaOliveira.png);
 }
 
 footer a{
