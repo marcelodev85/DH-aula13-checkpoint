@@ -1,16 +1,16 @@
 :root {
-     --color-primary: blue;
-     --color-secondary: gold;
-     --text-primary: black;
-     --text-secondary: white;
-     --bg-header: purple;
+    --color-primary: blue;
+    --color-secondary: gold;
+    --text-primary: black;
+    --text-secondary: white;
+    --bg-header: purple;
 
-     /*cores para section de video*/
-     --text-title: #0000CD;
-     --primary-paragrafo: black;
-     --secondary-paragrafo: white;
-     --primary-backgroud: #222222;
-     --secondary-backgroud: white;
+    /*cores para section de video*/
+    --text-title: #0000CD;
+    --primary-paragrafo: black;
+    --secondary-paragrafo: white;
+    --primary-backgroud: #222222;
+    --secondary-backgroud: white;
 
 }
 
@@ -36,7 +36,7 @@
 
 
 /*SECTION VIDEO*/
-.event-video{
+.event-video {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-backgroud);
@@ -50,7 +50,7 @@
     height: 200px;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 30px 0 0 20px;    
+    margin: 30px 0 0 20px;
 }
 
 .event-video h2 {
@@ -77,6 +77,7 @@
     margin: 30px 20px 0 0;
 
 }
+
 /*FOOTER*/
 footer {
     display: flex;
@@ -91,7 +92,7 @@ footer .perfil {
     background-position: center;
     width: 30%;
     height: 100%;
-    margin: 5px 0px 0px 0px;    
+    margin: 5px 0px 0px 0px;
 
 }
 
@@ -103,7 +104,7 @@ footer #imgPerfilThalita {
     background-image: url(../images/ThalitaOliveira.png);
 }
 
-footer a{
+footer a {
     margin-left: 1em;
 }
 
@@ -116,8 +117,82 @@ footer a{
     height: 40px;
     background-color: var(--primary-backgroud);
     color: var(--secondary-paragrafo);
-    
+
 }
+
+.event-video h2 {
+    font-family: "DynaPuff", sans-serif;
+    text-align: start;
+    text-align: center;
+    color: var(--text-title);
+    width: 90%;
+    margin: 10px 0 10px 20px;
+}
+
 .rodape p {
     font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+/* PESSOAL DAQUI PARA BAIXO É O CSS PARA DAR RESPONSIVO PARA MOBILE */
+
+/*Resposive Mobile */
+@media (max-width: 425px) {
+
+    /*SECTION VIDEO*/
+    .event-video {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .event-video .EmblemaPE {
+        width: 85%;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 30px 0 0 20px;
+        border: 2px solid red;
+    }
+
+    .event-video p {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-weight: 500;
+        color: var(--text-secondary);
+        width: 90%;
+        margin: 0px 0px 0px 5px;
+    }
+
+    .event-video .video iframe {
+        width: 90%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+        border: 2px solid red;
+
+    }
+
+
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    footer .perfil {
+        max-width: 100%;
+        border: 2px solid red;
+        margin: 10px 20px 0px 0px;
+
+    }
+
+    .rodape p {
+        font-family: "montserrat", sans-serif;
+        font-size: 0.5em;
+        text-transform: uppercase;
+    }
+
 }
