@@ -1,9 +1,10 @@
 :root {
-    --color-primary: blue;
+    --color-primary: #00baf2;
+    ;
     --color-secondary: gold;
     --text-primary: black;
     --text-secondary: white;
-    --bg-header: purple;
+    --bg-header: red;
 
     /*cores para section de video*/
     --text-title: #0000CD;
@@ -22,76 +23,201 @@
     box-sizing: border-box;
 }
 
-.bloco1{
-    background-image: url("../images/img1.jpg");
-    width: 100%;
-    height: 550px;
-    display: flex;
-    justify-content: flex-end;
-    background-size: cover;
-}
-
-.bloco1 p {
-    font-family: "Montserrat";
-    color: var(--text-paragrafo);
-    font-size: 50px;
-    font-weight: 500;
-    margin-right: 10px;
-    margin-top: 20px;
-}
-
-
 /*Header*/
 
-header{
+h1 {
+    width: 50%;
+    font-family: "Dynapuff", sans-serif;
+    text-shadow: 2px 2px var(--primary-backgroud);
+    color: var(--text-title);
+}
+
+
+header {
     display: flex;
-    background-color: var(--bg-header);
-    display: flex;
+    background-color: var(--color-primary);
     width: 100%;
     height: 100px;
     align-items: center;
-    justify-content: space-around;
 }
 
 
-.img-header{
+.img-header {
     height: 75px;
     margin-left: 10px;
 
 }
-.menu{
+
+.menu {
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     justify-content: flex-end;
+
 }
 
 
-.menu li{
+.menu li {
     font-family: "Montserrat", sans-serif;
     background-color: var(--secondary-backgroud);
     width: 190px;
     height: 60px;
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 1.5em;
     line-height: 28px;
-    border-radius: 10px;
+    border-radius: 100px;
     display: flex;
     justify-content: center;
     margin-right: 10px;
+    opacity: 0.8;
+    transition: .5s ease-in-out;
+    cursor: pointer;
 }
 
-.menu li a{    
+.menu li a {
     align-self: center;
     color: var(--text-primary);
     text-decoration: none;
+
 }
+
+.menu li:hover {
+    opacity: 1;
+}
+
+/*SECTION BACKGROUND*/
+
+
+.bloco1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../images/img1.jpg");
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: start;
+    background-size: cover;
+    flex-direction: column;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.bloco1:hover {
+    filter: brightness(150%);
+}
+
+.bloco1 h2 {
+    font-family: "lobster", sans-serif;
+    color: var(--color-primary);
+    font-size: 4em;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-shadow: 2px 2px var(--bg-header);
+
+}
+
+.bloco1 p {
+    font-family: "lobster", sans-serif;
+    color: var(--secondary-paragrafo);
+    justify-content: center;
+    font-size: 2.5em;
+    width: 50%;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-top: 20px;
+    box-shadow: 60px -16px var(--color-primary);
+
+}
+
+
+.bloco1 h3 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--secondary-paragrafo);
+    font-size: 3em;
+    font-weight: 500;
+    margin: 30px 0px;
+    text-align: center;
+
+}
+
+.bloco1 a {
+    padding: 20px 40px;
+    color: var(--text-secondary);
+    background-color: var(--text-title);
+    box-shadow: 10px -6px var(--color-primary);
+    border-radius: 5px;
+    font-family: "Montserrat";
+    opacity: 0.5;
+    transition: .5s ease-in-out;
+
+}
+
+.bloco1 a:hover {
+    opacity: 1;
+}
+
+
+/*SECTION CURIOSIDADES*/
+.main-curiosities h2 {
+    background-color: var(--primary-backgroud);
+    color: var(--secondary-paragrafo);
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    font-weight: 500;
+}
+
+.curiosities {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.curiosity {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    transition: .5s ease-in-out;
+    color: var(--text-tertiary);
+}
+
+.curiosity:hover {
+    transform: scale(1.1);
+    filter: brightness(180%);
+
+}
+
+.curiosity .curiosity-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#curiosity-1 {
+    background-image: url("../images/ataktub.jpg");
+}
+
+#curiosity-2 {
+    background-image: url("../images/RecifeCuriosidade.jpg");
+}
+
+#curiosity-3 {
+    background-image: url("../images/boloderolo.jpg");
+}
+
 
 
 
@@ -166,6 +292,10 @@ footer #imgPerfilThalita {
     background-image: url(../images/ThalitaOliveira.png);
 }
 
+footer #imgPerfilMarcelo {
+    background-image: url(../images/Marcelo.png);
+}
+
 footer a {
     margin-left: 1em;
 }
@@ -200,6 +330,66 @@ footer a {
 
 /*Resposive Mobile */
 @media (max-width: 425px) {
+    header {
+
+        background-color: var(--color-primary);
+        width: 100vw;
+        height: 300px;
+        align-items: center;
+    }
+
+
+    .img-header {
+        height: 75px;
+        margin-left: 10px;
+        margin-top: -200px;
+
+    }
+
+    h1 {
+        margin-top: -200px;
+        margin-bottom: 50px;
+        font-size: 1em;
+        width: 100vw;
+        font-family: "Dynapuff", sans-serif;
+        text-shadow: 2px 2px var(--primary-backgroud);
+        color: var(--text-title);
+    }
+
+
+    .menu ul {
+        position: absolute;
+        padding-left: 120px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .menu li {
+        margin-top: 10px;
+    }
+
+    /*SECTION BG*/
+    .bloco1 h3 {
+        font-size: 1em;
+    }
+
+
+    /*SECTION CURIOSiDADES*/
+    .curiosities {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .curiosity {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+
 
     /*SECTION VIDEO*/
     .event-video {
@@ -207,13 +397,13 @@ footer a {
         height: auto;
     }
 
+
     .event-video .EmblemaPE {
         width: 85%;
         height: 200px;
         background-position: center;
         background-repeat: no-repeat;
         margin: 30px 0 0 20px;
-        border: 2px solid red;
     }
 
     .event-video p {
@@ -231,7 +421,6 @@ footer a {
         align-items: center;
         text-align: center;
         margin: 10px 0px 10px 0px;
-        border: 2px solid red;
 
     }
 
@@ -245,8 +434,9 @@ footer a {
     }
 
     footer .perfil {
-        max-width: 100%;
-        border: 2px solid red;
+        width: 100%;
+        height: 500px;
+
         margin: 10px 20px 0px 0px;
 
     }
